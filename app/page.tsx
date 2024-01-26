@@ -2,6 +2,7 @@ import { Hero, SearchBar, CustomFilter, ShowMore, CarCard  } from '@/components'
 import Image from 'next/image'
 import { fuels, yearsOfProduction } from '@/constants';
 import { fetchCars } from '@/utils';
+import { HomeProps } from "@/types";
 
 export default async function Home({ searchParams }: HomeProps) {
   const allCars = await fetchCars({
