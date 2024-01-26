@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { CustomBottonProps } from "@/types";
+import { CustomButtonProps } from "@/types";
 
 export default function CustomButton({
   title,
   containerStyles,
   handleClick,
-}: CustomBottonProps) {
+}: CustomButtonProps) {
   return (
     <button
       disabled={false}
